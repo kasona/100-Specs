@@ -328,7 +328,10 @@ function addNumbers(x, y) {
  *
  */
 function installLinux(type) {
-  return linuxFlavors.indexOf(type) !== -1;
+  if (linuxFlavors.indexOf(type) === -1) {
+    return false;
+  }
+  return true;
 }
 
 /* Step 23
@@ -349,6 +352,18 @@ function installLinux(type) {
  *
  */
 
+function drink (type) {
+  var string = 'This ' + type + ' is ';
+  if (!(beers[type])) {
+    return false;
+  } else if (Array.isArray(beers[type])) {
+    var desc = beers[type];
+    for (var i = 0; i < desc.length; i++) {
+      string += desc[i] + ' and ';
+    }
+  }
+  return string + beers[type] + '.';
+}
 
 /* Step 24
  *
@@ -372,6 +387,7 @@ function installLinux(type) {
  * @return {String}
  *
  */
+
 
 
 /* Step 26
