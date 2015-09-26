@@ -316,7 +316,6 @@ function addNumbers(x, y) {
   return sum;
 }
 
-
 /* Step 22
  *
  * Define a function named "installLinux"
@@ -328,7 +327,9 @@ function addNumbers(x, y) {
  * @return {Bool}
  *
  */
-
+function installLinux(type) {
+  return linuxFlavors.indexOf(type) !== -1;
+}
 
 /* Step 23
  *
