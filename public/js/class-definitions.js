@@ -423,7 +423,13 @@ function listLivingOrgClass() {
  *
  */
 
-
+ function favoritePlanet (currentPlanet) {
+  if (planets.indexOf(currentPlanet) > -1) {
+    var randomPlanet = planets[Math.floor(Math.random() * planets.length)];
+    return 'I\'m from ' + currentPlanet + ', but I wish I could go to ' + randomPlanet;
+  }
+  return currentPlanet + ' is not a planet!';
+}
 /* Step 27
  *
  * Define a class named "Person" that has properties for
