@@ -423,13 +423,14 @@ function listLivingOrgClass() {
  *
  */
 
- function favoritePlanet (currentPlanet) {
+function favoritePlanet (currentPlanet) {
   if (planets.indexOf(currentPlanet) > -1) {
     var randomPlanet = planets[Math.floor(Math.random() * planets.length)];
     return 'I\'m from ' + currentPlanet + ', but I wish I could go to ' + randomPlanet;
   }
   return currentPlanet + ' is not a planet!';
 }
+
 /* Step 27
  *
  * Define a class named "Person" that has properties for
@@ -453,6 +454,19 @@ function listLivingOrgClass() {
  *
  */
 
+function Person(name, money, age, gender) {
+  this.name = name;
+  this.money = money;
+  this.age = age;
+  this.gender = gender;
+
+}
+Person.prototype.spendMoney = function(spent) {
+  this.money = this.money - spent;
+};
+Person.prototype.earnMoney = function(earned) {
+  this.money = this.money + earned;
+};
 
 /* Step 28
  *
