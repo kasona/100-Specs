@@ -377,6 +377,12 @@ function drink (type) {
  *
  */
 
+function browseURL (browser) {
+  if (browsers[browser]) {
+    return browsers[browser];
+  }
+  return false;
+}
 
 /* Step 25
  *
