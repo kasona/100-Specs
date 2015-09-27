@@ -555,7 +555,7 @@ Pen.prototype.write = function(message) {
  *   Garden
  *
  * properties
- *   @param {Number} plantsTotal
+ *   @param  plantsTotal
  *   @property {Bool:Not Passed as Argument - Default Value FALSE} isWatered
  *
  * methods
@@ -738,6 +738,44 @@ Stapler.prototype.staplePapers = function(stackOfPapers) {
  *
  */
 
+function Scientist (name, money, age, gender) {
+  Person.call(this, name, money, age, gender);
+  this.disciplines = [];
+  this.discoveries = [];
+}
+
+Scientist.prototype = Object.create(Person.prototype, {
+  constructor : {
+    value : Scientist
+  }
+});
+
+Scientist.prototype.addDiscipline = function(discipline) {
+  this.disciplines.push(discipline);
+};
+
+Scientist.prototype.checkDiscipline = function(discipline) {
+  if (this.disciplines.indexOf(discipline) > -1) {
+    return true;
+  }
+  return false;
+};
+
+Scientist.prototype.addDiscovery = function(discovery) {
+  this.discoveries.push(discovery);
+  var iDiscovered = 'I discovered ';
+  for (var i = 0; i < this.discoveries.length; i++) {
+    if (i === this.discoveries.length - 1 && this.discoveries.length > 1) {
+      return iDiscovered += 'and ' + this.discoveries[i] + '.';
+    } else if (this.discoveries.length === 1) {
+      return iDiscovered += this.discoveries[i] + '.';
+    } else if (this.discoveries.length === 2) {
+      iDiscovered += this.discoveries[i] + ' ';
+    } else {
+      iDiscovered += this.discoveries[i] + ', ';
+    }
+  }
+};
 
 /* Step 36
  *
@@ -760,6 +798,19 @@ Stapler.prototype.staplePapers = function(stackOfPapers) {
  *
  */
 
+function BankAccount(balance, owner) {
+  this.balance = balance;
+  this.owner = owner;
+}
+BankAccount.prototype.withdraw = function() {
+
+};
+BankAccount.prototype.deposit = function() {
+  // body...
+};
+BankAccount.prototype.rob = function() {
+  // body...
+};
 
 /* Step 37
  *
