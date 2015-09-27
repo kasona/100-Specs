@@ -667,6 +667,7 @@ PrincessLeia.prototype.marries = function(lover) {
     return 'Gross!';
   };
 };
+
 /* Step 34
  *
  * Define a class named "Stapler" with properties "color"
@@ -685,6 +686,18 @@ PrincessLeia.prototype.marries = function(lover) {
  *
  */
 
+function Stapler(color, maxPapers) {
+  this.color = color;
+  this.maxPapers = maxPapers;
+
+}
+Stapler.prototype.staplePapers = function(stackOfPapers) {
+  if (this.maxPapers >= stackOfPapers) {
+    return true;
+  } else if (this.maxPapers <= stackOfPapers) {
+    return false;
+  }
+};
 
 /* Step 35
  *
