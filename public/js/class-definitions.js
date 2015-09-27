@@ -1125,7 +1125,7 @@ var incandescent = new Lightbulb(true);
 var halogen = new Lightbulb(false);
 
 // Create 2 cookies of different flavors
-var chocolateChip;
+var chocolateChip = new Cookie('Chocolate Chip');
 var gingerbread;
 
 // Create 2 different meals
