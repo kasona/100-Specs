@@ -983,10 +983,6 @@ function Animal(species, gender) {
  * @param {string} model The vehicle's model
  */
 
-function Vehicle(make, model) {
-  this.make = make;
-  this.model = model;
-}
 
 /**
  * Step 52
@@ -998,13 +994,6 @@ function Vehicle(make, model) {
  *
  */
 
-function Shape (sides) {
-  if (sides >= 3) {
-    this.sides = sides;
-  } else {
-    this.sides = null;
-  }
-}
 
 /**
  * Step 53
@@ -1014,11 +1003,6 @@ function Shape (sides) {
  * @param {boolean} isOpen     Whether the box is opened or closed
  */
 
-function Box(contents, isOpen) {
-  this.contents = contents;
-  this.isOpen = isOpen;
-
-}
 
 /**
  * Step 54
@@ -1027,9 +1011,6 @@ function Box(contents, isOpen) {
  * @param {boolean} isOpen Whether the door is opened or closed
  */
 
-function Door(isOpen) {
-  this.isOpen = isOpen;
-}
 
 /**
  * Step 55
@@ -1039,10 +1020,6 @@ function Door(isOpen) {
  * @param {string} color The shoe color
  */
 
-function Shoe(size, color) {
-  this.size = size;
-  this.color = color;
-}
 
 /**
  * Step 56
@@ -1051,9 +1028,7 @@ function Shoe(size, color) {
  * @param {number} stories How many stories tall the house is
  */
 
-function House (stories) {
-  this.stories = stories;
-}
+
 
 /**
  * Step 57
@@ -1062,9 +1037,7 @@ function House (stories) {
  * @param {boolean} isOn Whether the light is on or off
  */
 
-function Lightbulb (isOn) {
-  this.isOn = isOn;
-}
+
 
 /**
  * Step 58
@@ -1080,6 +1053,7 @@ function Lightbulb (isOn) {
  * Meal class
  * @param {Array} foods All the foods in the meal
  */
+
 
 
 /**
