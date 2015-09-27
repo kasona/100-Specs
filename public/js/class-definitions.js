@@ -1389,8 +1389,11 @@ var polygon = poly.getType();
  * and assign the values to each variable below.
  *
  */
-var openAClosedBox;
-var closeAnOpenBox;
+
+var closedBox = new Box('bananas', false);
+var openAClosedBox = closedBox.openBox();
+var closeAnOpenBox = catBox.openBox();
+
 
 
  /* Step 95
