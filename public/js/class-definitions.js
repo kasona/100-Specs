@@ -500,6 +500,14 @@ function purchaseLaptop(laptop) {
  *
  */
 
+function canTalkAbout(club) {
+  //return true if you can talk about club
+  //false if club has same value as club_name
+  if (club == club_name) {
+    return false;
+  }
+  return true;
+}
 
 /* Step 30
  *
