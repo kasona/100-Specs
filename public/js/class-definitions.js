@@ -1463,5 +1463,8 @@ var cookieMonsterBlocked = cookieCantBeTouched.swipedByCookieMonster('Tuesday');
  * and assign the values to each variable below.
  *
  */
-var badForYou;
-var goodForYou;
+
+var badFoods = new Meal(['chips', 'soda', 'cocaine']);
+var goodFoods = new Meal(['celery', 'lamb', 'children']);
+var badForYou = badFoods.containsJunkFood();
+var goodForYou = goodFoods.containsJunkFood();
