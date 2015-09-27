@@ -1181,7 +1181,7 @@ Vehicle.prototype.drive = function(streetName) {
   return 'Driving forward';
 };
 
- /* Step 83
+/* Step 83
  *
  * Declare a Shape method called getType that returns a string
  * containing the type of shape based on the sides property.
@@ -1199,6 +1199,28 @@ Vehicle.prototype.drive = function(streetName) {
  *
  */
 
+Shape.prototype.getType = function() {
+  switch (this.sides) {
+    case 3 :
+      return 'triangle';
+    case 4 :
+      return 'quadrilateral';
+    case 5 :
+      return 'pentagon';
+    case 6 :
+      return 'hexagon';
+    case 7 :
+      return 'heptagon';
+    case 8 :
+      return 'octagon';
+    case 9 :
+      return 'nonagon';
+    case 10 :
+      return 'decagon';
+    default :
+      return 'Could not determine type';
+  }
+};
 
 /* Step 84
  *
@@ -1209,6 +1231,13 @@ Vehicle.prototype.drive = function(streetName) {
  *
  */
 
+// Box.prototype.openBox = function() {
+//   if (Box.isOpen == false) {
+//     return true;
+//   } else if (Box.isOpen !== false) {
+//     return false;
+//   }
+// };
 
  /* Step 85
  *
