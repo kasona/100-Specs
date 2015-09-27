@@ -1155,6 +1155,16 @@ var dinner = new Meal(['fish', 'vegetables']) ;
  *
  */
 
+Animal.prototype.isWarmBlooded = function() {
+  if (this.species == 'Fish') {
+    return false;
+  } else if (this.species == 'Monkey' ||
+             this.species == 'Bird') {
+    return true;
+  } else {
+    return 'Could not determine if warm-blooded';
+  }
+};
 
 /* Step 82
  *
@@ -1164,6 +1174,12 @@ var dinner = new Meal(['fish', 'vegetables']) ;
  *
  */
 
+Vehicle.prototype.drive = function(streetName) {
+  if (typeof streetName === 'string' && streetName.length > 0) {
+    return 'Driving on ' + streetName;
+  }
+  return 'Driving forward';
+};
 
  /* Step 83
  *
