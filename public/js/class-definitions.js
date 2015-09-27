@@ -1331,7 +1331,15 @@ Cookie.prototype.swipedByCookieMonster = function(dayOfTheWeek) {
  * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf
  *
  */
-
+Meal.prototype.containsJunkFood = function() {
+  var junkFood = ['chips', 'soda', 'ice cream', 'popcorn', 'candy'];
+  for (var i = 0; i < junkFood.length; i++) {
+    if (this.foods.indexOf(junkFood[i]) > -1) {
+      return true;
+    }
+  }
+  return false;
+};
 
  /* Steps 91 to 100
  *
@@ -1346,9 +1354,11 @@ Cookie.prototype.swipedByCookieMonster = function(dayOfTheWeek) {
  * and assign the values to each variable below.
  *
  */
-var warmBloodedAnimal;
-var coldBloodedAnimal;
-var notWarmOrColdAnimal;
+
+var warmBloodedAnimal = george.isWarmBlooded();
+var coldBloodedAnimal = nemo.isWarmBlooded();
+var dino = new Animal('dino', gender.female);
+var notWarmOrColdAnimal = dino.isWarmBlooded();
 
 
 /* Step 92
@@ -1357,8 +1367,8 @@ var notWarmOrColdAnimal;
  * and assign the values to each variable below.
  *
  */
-var streetDriving;
-var forwardDriving;
+var streetDriving = forte.drive('Henokea');
+var forwardDriving = civic.drive();
 
 
  /* Step 93
@@ -1367,9 +1377,11 @@ var forwardDriving;
  * and assign the values to each variable below.
  *
  */
-var decagon;
-var polygon;
 
+var dec = new Shape(33);
+var poly = new Shape(333);
+var decagon = dec.getType();
+var polygon = poly.getType();
 
 /* Step 94
  *
