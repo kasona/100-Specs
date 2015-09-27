@@ -1378,8 +1378,8 @@ var forwardDriving = civic.drive();
  *
  */
 
-var dec = new Shape(33);
-var poly = new Shape(333);
+var dec = new Shape(10);
+var poly = new Shape(33);
 var decagon = dec.getType();
 var polygon = poly.getType();
 
