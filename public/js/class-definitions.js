@@ -1402,8 +1402,12 @@ var closeAnOpenBox = catBox.openBox();
  * and assign the values to each variable below.
  *
  */
-var openAClosedDoor;
-var closeAnOpenDoor;
+
+var closedDoor = new Door(false);
+var openDoor = new Door(true);
+var openAClosedDoor = closedDoor.openClose();
+var closeAnOpenDoor = openDoor.openClose();
+
 
 
 /* Step 96
