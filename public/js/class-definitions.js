@@ -1437,8 +1437,11 @@ var shortStory = singleStory.isATallStory(5);
  * and assign the values to each variable below.
  *
  */
-var kitchenLightsOn;
-var porchLightsOff;
+
+var kitchenLights = new Lightbulb(false);
+var porchLights = new Lightbulb(true);
+var kitchenLightsOn = kitchenLights.flipSwitch('on');
+var porchLightsOff = porchLights.flipSwitch('off');
 
 
  /* Step 99
@@ -1447,8 +1450,11 @@ var porchLightsOff;
  * and assign the values to each variable below.
  *
  */
-var cookieMonsterPwns;
-var cookieMonsterBlocked;
+
+var cookieToBeSwiped = new Cookie('chocolate');
+var cookieCantBeTouched = new Cookie('chocolate');
+var cookieMonsterPwns = cookieToBeSwiped.swipedByCookieMonster('Monday');
+var cookieMonsterBlocked = cookieCantBeTouched.swipedByCookieMonster('Tuesday');
 
 
  /* Step 100
