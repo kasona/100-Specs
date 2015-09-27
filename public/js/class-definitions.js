@@ -1098,7 +1098,7 @@ var nemo = new Animal('Fish', gender.male);
 
 // Create 2 different vehicles
 var civic = new Vehicle('Honda', 'Civic');
-// var forte = new Vehicle('KIA', model.forte);
+var forte = new Vehicle('KIA', 'Forte');
 
 // Create 2 shapes with different numbers of sides
 var square;
