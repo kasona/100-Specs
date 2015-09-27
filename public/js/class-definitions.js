@@ -798,20 +798,6 @@ Scientist.prototype.addDiscovery = function(discovery) {
  *
  */
 
-function BankAccount(balance, owner) {
-  this.balance = balance;
-  this.owner = owner;
-}
-BankAccount.prototype.withdraw = function() {
-
-};
-BankAccount.prototype.deposit = function() {
-  // body...
-};
-BankAccount.prototype.rob = function() {
-  // body...
-};
-
 /* Step 37
  *
  * WIP
@@ -984,6 +970,10 @@ BankAccount.prototype.rob = function() {
  * @param {string} gender  male or female
  */
 
+function Animal(species, gender) {
+  this.species = species;
+  this.gender = gender;
+}
 
 /**
  * Step 51
@@ -993,6 +983,10 @@ BankAccount.prototype.rob = function() {
  * @param {string} model The vehicle's model
  */
 
+function Vehicle(make, model) {
+  this.make = make;
+  this.model = model;
+}
 
 /**
  * Step 52
@@ -1004,6 +998,13 @@ BankAccount.prototype.rob = function() {
  *
  */
 
+function Shape (sides) {
+  if (sides >= 3) {
+    this.sides = sides;
+  } else {
+    this.sides = null;
+  }
+}
 
 /**
  * Step 53
@@ -1013,6 +1014,11 @@ BankAccount.prototype.rob = function() {
  * @param {boolean} isOpen     Whether the box is opened or closed
  */
 
+function Box(contents, isOpen) {
+  this.contents = contents;
+  this.isOpen = isOpen;
+
+}
 
 /**
  * Step 54
@@ -1021,6 +1027,9 @@ BankAccount.prototype.rob = function() {
  * @param {boolean} isOpen Whether the door is opened or closed
  */
 
+function Door(isOpen) {
+  this.isOpen = isOpen;
+}
 
 /**
  * Step 55
@@ -1030,6 +1039,10 @@ BankAccount.prototype.rob = function() {
  * @param {string} color The shoe color
  */
 
+function Shoe(size, color) {
+  this.size = size;
+  this.color = color;
+}
 
 /**
  * Step 56
@@ -1038,6 +1051,9 @@ BankAccount.prototype.rob = function() {
  * @param {number} stories How many stories tall the house is
  */
 
+function House (stories) {
+  this.stories = stories;
+}
 
 /**
  * Step 57
@@ -1046,6 +1062,9 @@ BankAccount.prototype.rob = function() {
  * @param {boolean} isOn Whether the light is on or off
  */
 
+function Lightbulb (isOn) {
+  this.isOn = isOn;
+}
 
 /**
  * Step 58
