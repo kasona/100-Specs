@@ -1102,7 +1102,7 @@ var forte = new Vehicle('KIA', 'Forte');
 
 // Create 2 shapes with different numbers of sides
 var square = new Shapes(4);
-// var hexagon = new Shapes(6);
+var hexagon = new Shapes(6);
 
 // Create 2 boxes
 var catBox;
