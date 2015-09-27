@@ -1231,15 +1231,15 @@ Shape.prototype.getType = function() {
  *
  */
 
-// Box.prototype.openBox = function() {
-//   if (Box.isOpen == false) {
-//     return true;
-//   } else if (Box.isOpen !== false) {
-//     return false;
-//   }
-// };
+Box.prototype.openBox = function() {
+  if (this.isOpen === false) {
+    this.isOpen = true;
+    return true;
+  }
+  return false;
+};
 
- /* Step 85
+/* Step 85
  *
  * Declare a Door method called openClose that opens the door
  * if it is already closed, or closes the door if it is already open.
