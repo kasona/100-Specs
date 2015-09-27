@@ -1101,8 +1101,8 @@ var civic = new Vehicle('Honda', 'Civic');
 var forte = new Vehicle('KIA', 'Forte');
 
 // Create 2 shapes with different numbers of sides
-var square;
-var hexagon;
+var square = new Shapes(4);
+// var hexagon = new Shapes(6);
 
 // Create 2 boxes
 var catBox;
