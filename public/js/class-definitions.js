@@ -1084,19 +1084,17 @@ function Cookie (flavor) {
  * @param {Array} foods All the foods in the meal
  */
 
-function Meal (food) {
-  this.food = food;
+function Meal(foods) {
+  this.foods = foods;
 }
-
 /**
  * Create a new instance of the Classes you defined above, below!
  * Steps 60-80 (each variable is a 'step')
  */
 
-
 // Create 2 different species of animals
-var george;
-var nemo;
+var george = new Animal('Monkey', gender.male);
+// var nemo = new Animal('Fish', gender.male);
 
 // Create 2 different vehicles
 var civic;
