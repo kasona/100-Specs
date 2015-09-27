@@ -1101,11 +1101,11 @@ var civic = new Vehicle('Honda', 'Civic');
 var forte = new Vehicle('KIA', 'Forte');
 
 // Create 2 shapes with different numbers of sides
-var square = new Shapes(4);
-var hexagon = new Shapes(6);
+var square = new Shape(4);
+var hexagon = new Shape(6);
 
 // Create 2 boxes
-var catBox;
+var catBox = new Box(new Animal('Cat', gender.unknown), true);
 var christmasPresent;
 
 // Create 2 doors
