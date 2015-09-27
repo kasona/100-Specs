@@ -480,6 +480,13 @@ Person.prototype.earnMoney = function(earned) {
  *
  */
 
+function purchaseLaptop(laptop) {
+  //if laptop is valid in laptopCosts return as string
+  if (laptopCosts[laptop]) {
+    return laptopCosts[laptop].toString();
+  }
+  return -1;
+}
 
 /* Step 29
  *
